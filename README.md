@@ -4,9 +4,8 @@ Welcome to Week 02, Wednesday Session 02!
 
 In this lesson, we will cover a fairbit because we didn't get to do Monday's session due to a public Holiday:
 
-In JavaScript, we have different data types. Students must understand these data types. Go
-through and teach and explain each data type, especially the concept of the Boolean
-argument. 
+In JavaScript, we have different data types. If you're a student, you must understand these data types. Let's
+go through each data type, especially the concept of the Boolean (true or false) arguement. 
 
 ## 📌 JavaScript Strings
 
@@ -47,7 +46,7 @@ argument.
     ```js
     // With decimals:
     let x1 = 34.00;
-    
+
     // Without decimals:
     let x2 = 34; 
     ```
