@@ -83,46 +83,50 @@ go through each data type, especially the concept of the Boolean (true or false)
 
 
 
-## 📌 JavaScript Line Length and Line Breaks
+## 📌 JavaScript Booleans
 
--   For best readability, programmers often like to avoid code lines longer than 80 characters. Although with large modern screens nowadays the need to do this is less common.
--   If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+-   Booleans can only have two values: true or false.
 
     For example:
 
     ```js
-    document.getElementById("demo").innerHTML = "Hello Dolly!";
+    let x = 5;
+    let y = 5;
+    let z = 6;
+    if (x == y) {return true}  
+    if (x == z) {return false} 
+
     ```
+-   Booleans are super important to understand in the logic of passing an argument. For example, is a password entered true or false? In the example of tasks an incomplete task is considered false and a complete task is considered true.
 
-## 📌 JavaScript Code Blocks
 
--   JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.
--   The purpose of code blocks is to define statements to be executed together.
--   One place you will find statements grouped together in blocks, is in JavaScript functions:
-    For example
+## 📌 JavaScript Arrays
+
+
+-   Without exception, JavaScript arrays are ALWAYS written with square brackets.
+-   Array items are separated by commas
+-   The following code declares (creates) an array called cars, containing three items (car names):
+    
 
     ```js
-    function myFunction() {
-    	document.getElementById("demo1").innerHTML = "Hello Dolly!";
-    	document.getElementById("demo2").innerHTML = "How are you?";
-    }
+    const cars = ["Saab", "Volvo", "BMW"];
     ```
 
-## 📌 JavaScript Code Blocks
+## 📌 JavaScript Objects
 
--   It's quite common for JavaScript statements to start with a keyword which identifies the JavaScript action to be performed.
+-   JavaScript objects are written with curly braces {}.
+-   Object properties are written as name:value pairs, separated by commas
 
-| Keyword  | Description                                                       |
-| -------- | ----------------------------------------------------------------- |
-| Jvar     | Declares a variable                                               |
-| let      | Declares a block variable                                         |
-| const    | Declares a block constant                                         |
-| if       | Marks a block of statements to be executed if a condition is true |
-| switch   | Marks a block of statements to be executed in different cases     |
-| for      | Marks a block of statements to be executed in a loop              |
-| function | Declares a function                                               |
-| return   | Exits a function                                                  |
-| try      | Implements error handling to a block of statements                |
+    For example: The object (person) in the example below has 4 properties: firstName, lastName, age, and eyeColor.
+
+    ```js
+    const person = {
+        firstName:"John", 
+        lastName:"Doe", 
+        age:50, e
+        yeColor:"blue"
+        };
+    ```
 
 ## 📌 JavaScript Comments
 
@@ -229,3 +233,17 @@ go through each data type, especially the concept of the Boolean (true or false)
 -   The values can be of various types, such as numbers and strings.
     For example, "John" + " " + "Doe", evaluates to "John Doe":
     "John" + " " + "Doe"
+
+
+
+| Keyword  | Description                                                       |
+| -------- | ----------------------------------------------------------------- |
+| Jvar     | Declares a variable                                               |
+| let      | Declares a block variable                                         |
+| const    | Declares a block constant                                         |
+| if       | Marks a block of statements to be executed if a condition is true |
+| switch   | Marks a block of statements to be executed in different cases     |
+| for      | Marks a block of statements to be executed in a loop              |
+| function | Declares a function                                               |
+| return   | Exits a function                                                  |
+| try      | Implements error handling to a block of statements                |
