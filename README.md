@@ -102,7 +102,9 @@ go through each data type, especially the concept of the Boolean (true or false)
 ## 📌 JavaScript Arrays
 
 -   Without exception, JavaScript arrays are ALWAYS written with square brackets.
+
 -   Array items are separated by commas
+
 -   The following code declares (creates) an array called cars, containing three items (car names):
 
     ```js
@@ -112,9 +114,10 @@ go through each data type, especially the concept of the Boolean (true or false)
 ## 📌 JavaScript Objects
 
 -   JavaScript objects are written with curly braces {}.
+
 -   Object properties are written as name:value pairs, separated by commas
 
-    For example: The object (person) in the example below has 4 properties: firstName, lastName, age, and eyeColor.
+-   For example: The object (person) in the example below has 4 properties: firstName, lastName, age, and eyeColor.
 
     ```js
     const person = {
@@ -129,7 +132,7 @@ go through each data type, especially the concept of the Boolean (true or false)
 
 -   You can use the JavaScript typeof operator to find the type of a JavaScript variable.
 
-    For example:
+-   For example:
 
     ```js
     typeof ""; // Returns "string"
@@ -154,7 +157,7 @@ In JavaScript we use certain symbols and operators as commands that perform func
 
 -   The Assignment Operator (=) assigns a value to a variable:
 
-    For example:
+-   For example:
 
     ```js
     let x = 10;     
@@ -171,7 +174,7 @@ In JavaScript we use certain symbols and operators as commands that perform func
 
 -   The Addition Operator (+) adds numbers:
 
-    For example:
+-   For example:
 
     ```js
     
@@ -184,7 +187,7 @@ In JavaScript we use certain symbols and operators as commands that perform func
 
 -   The Multiplication Operator (*) multiplies numbers:
 
-    For example:
+-   For example:
 
     ```js
     
@@ -219,7 +222,7 @@ In JavaScript we use certain symbols and operators as commands that perform func
 
 -   Arithmetic Operators are used to perform arithmetic on numbers:
 
-    For example:
+-   For example:
 
     ```js
     
@@ -250,7 +253,7 @@ Assignment operators assign values to JavaScript variables.
 
 The Addition Assignment Operator (+=) adds a value to a variable.
 
-    For example:
+-   For example:
 
     ```js
     
@@ -290,7 +293,7 @@ The Addition Assignment Operator (+=) adds a value to a variable.
 
 All the comparison operators above can also be used on strings:
 
-    For example:
+-   For example:
 
     ```js
     let text1 = "A";
@@ -302,7 +305,7 @@ All the comparison operators above can also be used on strings:
 
 The + can also be used to add (concatenate) strings:
 
-    For example:
+-   For example:
 
     ```js
     let text1 = "John";
@@ -312,7 +315,7 @@ The + can also be used to add (concatenate) strings:
 
 The += assignment operator can also be used to add (concatenate) strings:
 
-    For example:
+-   For example:
 
     ```js
     let text1 = "What a very ";
@@ -327,8 +330,7 @@ The += assignment operator can also be used to add (concatenate) strings:
 
 Adding two numbers, will return the sum, but adding a number and a string will return a string:
 
-
-    For example:
+-   For example:
 
     ```js
     let x = 5 + 5;
