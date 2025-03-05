@@ -25,7 +25,7 @@ go through each data type, especially the concept of the Boolean (true or false)
 
 -   You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
 
--   For Example: You can double quotes insides single quotes,  or single quotes inside double quotes:
+-   For Example: You can double quotes insides single quotes, or single quotes inside double quotes:
 
     ```js
     // Single quote inside double quotes:
@@ -62,12 +62,12 @@ go through each data type, especially the concept of the Boolean (true or false)
 
     ```js
     let y = 123e5; // 12300000
-    let z = 123e-5; // 0.00123 
+    let z = 123e-5; // 0.00123
     ```
-    
+
     ### the JavaScript Big Integer
 
-    By default,  all JavaScript numbers are stored in a 64-bit floating-point format.
+    By default, all JavaScript numbers are stored in a 64-bit floating-point format.
 
     However, a new datatype (ES2020) was recently introduced which can be used to store integer values that are
     too big to be represented by a normal JavaScript Number.
@@ -77,11 +77,6 @@ go through each data type, especially the concept of the Boolean (true or false)
     ```js
     let x = BigInt("123456789012345678901234567890");
     ```
-    
-
-
-
-
 
 ## 📌 JavaScript Booleans
 
@@ -94,24 +89,21 @@ go through each data type, especially the concept of the Boolean (true or false)
     let x = 5;
     let y = 5;
     let z = 6;
-    if (x == y) {return true}  
+    if (x == y) {
+    	return true;
+    }
     if (x == z) {
-        return true;
+    	return true;
     } else {
-        return false;
-    } 
-
+    	return false;
+    }
     ```
 
-
-
 ## 📌 JavaScript Arrays
-
 
 -   Without exception, JavaScript arrays are ALWAYS written with square brackets.
 -   Array items are separated by commas
 -   The following code declares (creates) an array called cars, containing three items (car names):
-    
 
     ```js
     const cars = ["Saab", "Volvo", "BMW"];
@@ -126,11 +118,11 @@ go through each data type, especially the concept of the Boolean (true or false)
 
     ```js
     const person = {
-        firstName:"John", 
-        lastName:"Doe", 
-        age:50, 
-        eyeColor:"blue"
-        };
+    	firstName: "John",
+    	lastName: "Doe",
+    	age: 50,
+    	eyeColor: "blue",
+    };
     ```
 
 ## 📌 The typeof Operator
@@ -140,92 +132,82 @@ go through each data type, especially the concept of the Boolean (true or false)
     For example:
 
     ```js
-    typeof ""            // Returns "string"
-    typeof "John"        // Returns "string"
-    typeof "John Doe"    // Returns "string" 
+    typeof ""; // Returns "string"
+    typeof "John"; // Returns "string"
+    typeof "John Doe"; // Returns "string"
     ```
 
-## 📌  Undefined 
+## 📌 Undefined
 
 -   In JavaScript, a variable without a value, has the value `undefined`. The type is also `undefined`.
 
     ```js
-    let car;             // Value is undefined, type is undefined 
-    console.log("typeof(car) === ", typeof(car))
-
-
-
-
+    let car; // Value is undefined, type is undefined
+    console.log("typeof(car) === ", typeof car);
+    ```
 
 # Week 02 - Part 2: Symbols and operators
 
+In JavaScript we use certain symbols and operators as commands that perform functions. Students need to understand the concept of what an `=` means (single equals) as well as what `==` means (double equals )means. Explaining the symbols and operators is important to understand assigning and command values.
 
+## 📌 JavaScript Assignment
 
+-   The Assignment Operator (=) assigns a value to a variable:
 
-
-## 📌 JavaScript Identifiers
-
--   Identifiers are JavaScript names.
--   Identifiers are used to name variables and keywords, and functions.
--   The rules for legal names are the same in most programming languages.
--   A JavaScript name must begin with:
-
-    -   A letter (A-Z or a-z)
-    -   • A dollar sign ($)
-    -   • Or an underscore (\_)
-
--   Subsequent characters may be letters, digits, underscores, or dollar signs
-
-    ### Special Note
-
-    Numbers are not allowed as the first character in names.
-
-    This way JavaScript can easily distinguish identifiers from numbers.
-
-## 📌 JavaScript is ALWAYS Case Sensitive
-
--   All JavaScript identifiers are case sensitive.
--   For example: The variables `lastName` and `lastname`, are two different variables:
+    For example:
 
     ```js
-    let lastname, lastName;
-    lastName = "Doe";
-    lastname = "Peterson";
+    let x = 10;     
+
+    let x = 5;       // Assign the value 5 to x
+
+    let y = 2;       // Assign the value 2 to y
+
+    let z = x + y;   // Assign the value x + y to z:
     ```
 
-## 📌 JavaScript and Camel Case
 
--   Historically, programmers have used different ways of joining multiple words into one variable name:
+## 📌 JavaScript Addition
 
-    ### Hypens - NOT ALLOWED
+-   The Addition Operator (+) adds numbers:
 
-    first-name, last-name, master-card, inter-city
+    For example:
 
--   Hyphens are not allowed in JavaScript. They are reserved for subtractions.
+    ```js
+    
+    let x = 5;
+    let y = 2;
+    let z = x + y;
+    ```
 
-    ### Underscore (allowed)
+## 📌 JavaScript Multiplication
 
-    first_name, last_name, master_card, inter_city.
+-   The Multiplication Operator (*) multiplies numbers:
 
-    ### Upper Camel Case - aka Pascal Case (allowed)
+    For example:
 
-    FirstName, LastName, MasterCard, InterCity
+    ```js
+    
+    let x = 5;
+    let y = 2;
+    let z = x * y;
+    ```
 
-    ### Lower Camel Case
+## 📌 Types of JavaScript Operators
 
-    firstName, lastName, masterCard, interCity
+-   There are different types of JavaScript operators:
 
--   JavaScript programmers tend to use lower camel case that starts with a lowercase letter:
+    • Arithmetic Operators
+    • Assignment Operators
+    • Comparison Operators
+    • String Operators
+    • Logical Operators
+    • Bitwise Operators
+    • Ternary Operators
+    • Type Operators
 
-## 📌 JavaScript Character Set
 
--   JavaScript uses the Unicode character set.
-
--   Unicode covers (almost) all the characters, punctuations, and symbols in the world.
-
--   For a closer look, please study our Complete Unicode Reference.
-
-## 📌 JavaScript Expressions
+## 📌 JavaScript Arithmetic Operators
 
 -   An expression is a combination of values, variables, and operators, which computes to a value.
 -   The computation is called an evaluation.
@@ -237,7 +219,25 @@ go through each data type, especially the concept of the Boolean (true or false)
     For example, "John" + " " + "Doe", evaluates to "John Doe":
     "John" + " " + "Doe"
 
+## 📌 JavaScript Arithmetic Operators
 
+## 📌 JavaScript Comparison Operators
+
+## 📌 JavaScript String Comparison
+
+## 📌 JavaScript String Addition
+
+## 📌 Adding Strings and Numbers
+
+## 📌 JavaScript Logical Operators
+
+## 📌 JavaScript Type Operators
+
+## 📌 JavaScript Bitwise Operators
+
+## 📌 JavaScript Logical Operators
+
+## 📌 JavaScript Logical Operators
 
 | Keyword  | Description                                                       |
 | -------- | ----------------------------------------------------------------- |
