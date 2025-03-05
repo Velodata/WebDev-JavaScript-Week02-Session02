@@ -300,26 +300,44 @@ All the comparison operators above can also be used on strings:
 
 ## 📌 JavaScript String Addition
 
+The + can also be used to add (concatenate) strings:
+
+    For example:
+
+    ```js
+    let text1 = "John";
+    let text2 = "Doe";
+    let text3 = text1 + " " + text2;
+    ```
+
+The += assignment operator can also be used to add (concatenate) strings:
+
+    For example:
+
+    ```js
+    let text1 = "What a very ";
+    text1 += "nice day";
+    ```
+
+    The result of text1 will be:  "What a very nice day"
+
+
+
 ## 📌 Adding Strings and Numbers
 
-## 📌 JavaScript Logical Operators
+Adding two numbers, will return the sum, but adding a number and a string will return a string:
 
-## 📌 JavaScript Type Operators
 
-## 📌 JavaScript Bitwise Operators
+    For example:
 
-## 📌 JavaScript Logical Operators
+    ```js
+    let x = 5 + 5;
+    let y = "5" + 5;
+    let z = "Hello" + 5;
+    ```
 
-## 📌 JavaScript Logical Operators
+    The result of x, y, and z will be:
+    -   10
+    -   55
+    -   Hello5 
 
-| Keyword  | Description                                                       |
-| -------- | ----------------------------------------------------------------- |
-| Jvar     | Declares a variable                                               |
-| let      | Declares a block variable                                         |
-| const    | Declares a block constant                                         |
-| if       | Marks a block of statements to be executed if a condition is true |
-| switch   | Marks a block of statements to be executed in different cases     |
-| for      | Marks a block of statements to be executed in a loop              |
-| function | Declares a function                                               |
-| return   | Exits a function                                                  |
-| try      | Implements error handling to a block of statements                |
