@@ -212,26 +212,73 @@ In JavaScript we use certain symbols and operators as commands that perform func
     • Ternary Operators
 
     • Type Operators
+
+
+
+## 📌 JavaScript Arithmetic Operators
+
+-   Arithmetic Operators are used to perform arithmetic on numbers:
+
+    For example:
+
+    ```js
     
+    let a = 3;
+    let x = (100 + 50) * a;
+    ```
+
+    +       Addition
+    -       Subtraction
+    *       Multiplication
+    **      Exponentiation (ES2016)
+    /       Division
+    %       Modulus (Division Remainder)
+    ++      Increment
+    --      Decrement
+
+## 📌 JavaScript Assignment Operators
+
+Assignment operators assign values to JavaScript variables.
+
+The Addition Assignment Operator (+=) adds a value to a variable.
+
+    For example:
+
+    ```js
+    
+    let x = 10;    // first we let x equal 10
+    x += 5;        // and then we add another 5 to the vaue of x
+    ```
 
 
-## 📌 JavaScript Arithmetic Operators
 
--   An expression is a combination of values, variables, and operators, which computes to a value.
--   The computation is called an evaluation.
--   For example, 5 _ 10 evaluates to 50:
-    5 _ 10
--   Expressions can also contain variable values:
-    x \* 10
--   The values can be of various types, such as numbers and strings.
-    For example, "John" + " " + "Doe", evaluates to "John Doe":
-    "John" + " " + "Doe"
-
-## 📌 JavaScript Arithmetic Operators
 
 ## 📌 JavaScript Comparison Operators
 
+**Operator    Description**
+==          equal to
+===         equal value and equal type
+!=          not equal
+!==         not equal value or not equal type
+>           greater than
+<           less than
+>=          greater than or equal to
+<=          less than or equal to
+?           ternary operator
+
+
+
 ## 📌 JavaScript String Comparison
+
+All the comparison operators above can also be used on strings:
+
+    For example:
+
+    ```js
+    let text1 = "A";
+    let text2 = "B";
+    let result = text1 < text2;
+    ```
 
 ## 📌 JavaScript String Addition
 
