@@ -86,6 +86,7 @@ go through each data type, especially the concept of the Boolean (true or false)
 ## 📌 JavaScript Booleans
 
 -   Booleans can only have two values: true or false.
+-   Booleans are super important to understand in the logic of passing an argument. For example, is a password entered true or false? In the example of tasks an incomplete task is considered false and a complete task is considered true.
 
     For example:
 
@@ -94,10 +95,14 @@ go through each data type, especially the concept of the Boolean (true or false)
     let y = 5;
     let z = 6;
     if (x == y) {return true}  
-    if (x == z) {return false} 
+    if (x == z) {
+        return true;
+    } else {
+        return false;
+    } 
 
     ```
--   Booleans are super important to understand in the logic of passing an argument. For example, is a password entered true or false? In the example of tasks an incomplete task is considered false and a complete task is considered true.
+
 
 
 ## 📌 JavaScript Arrays
@@ -123,42 +128,40 @@ go through each data type, especially the concept of the Boolean (true or false)
     const person = {
         firstName:"John", 
         lastName:"Doe", 
-        age:50, e
-        yeColor:"blue"
+        age:50, 
+        eyeColor:"blue"
         };
     ```
 
-## 📌 JavaScript Comments
+## 📌 The typeof Operator
 
--   Not all JavaScript statements are "executed".
--   Code after double slashes // or between /_ and _/ is treated as a comment.
--   Comments are ignored, and will not be executed:
+-   You can use the JavaScript typeof operator to find the type of a JavaScript variable.
 
     For example:
 
     ```js
-    let x = 5; // I will be executed
-
-    // x = 6; I will NOT be executed
+    typeof ""            // Returns "string"
+    typeof "John"        // Returns "string"
+    typeof "John Doe"    // Returns "string" 
     ```
 
-## 📌 Multi-line Comments
+## 📌  Undefined 
 
--   Multi-line comments start with /_ and end with _/.
--   Multi-line comments happen when we comment out multiple lines of JavaScript.
--   Any text between /_ and _/ will be ignored by JavaScript.
--   This example uses a multi-line comment (a comment block) to explain the code:
+-   In JavaScript, a variable without a value, has the value `undefined`. The type is also `undefined`.
 
     ```js
-    /*
-    The code below will change
-    the heading with id = "myH"
-    and the paragraph with id = "myP"
-    in my web page:
-    */
-    document.getElementById("myH").innerHTML = "My First Page";
-    document.getElementById("myP").innerHTML = "My first paragraph.";
-    ```
+    let car;             // Value is undefined, type is undefined 
+    console.log("typeof(car) === ", typeof(car))
+
+
+
+
+
+# Week 02 - Part 2: Symbols and operators
+
+
+
+
 
 ## 📌 JavaScript Identifiers
 
