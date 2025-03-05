@@ -227,14 +227,14 @@ In JavaScript we use certain symbols and operators as commands that perform func
     let x = (100 + 50) * a;
     ```
 
-    +       Addition
-    -       Subtraction
-    *       Multiplication
-    **      Exponentiation (ES2016)
-    /       Division
-    %       Modulus (Division Remainder)
-    ++      Increment
-    --      Decrement
+    `+ `      Addition
+    `-`       Subtraction
+    `* `      Multiplication
+    `**`      Exponentiation (ES2016)
+    `/`       Division
+    `%`       Modulus (Division Remainder)
+    `++`      Increment
+    `--`      Decrement
 
 ## 📌 JavaScript Assignment Operators
 
@@ -256,15 +256,15 @@ The Addition Assignment Operator (+=) adds a value to a variable.
 ## 📌 JavaScript Comparison Operators
 
 **Operator    Description**
-==          equal to
-===         equal value and equal type
-!=          not equal
-!==         not equal value or not equal type
->           greater than
-<           less than
->=          greater than or equal to
-<=          less than or equal to
-?           ternary operator
+`==`          equal to
+`===`         equal value and equal type
+`!=`          not equal
+`!==`         not equal value or not equal type
+`>`           greater than
+`<`           less than
+`>=`          greater than or equal to
+`<=`          less than or equal to
+`?`           ternary operator
 
 
 
